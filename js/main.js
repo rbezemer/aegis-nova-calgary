@@ -31,8 +31,7 @@ function updateClock(){
   hoursSpan.html(('0' + t.hours).slice(-2));
   minutesSpan.html(('0' + t.minutes).slice(-2));
   var seconds = ('0' + t.seconds).slice(-2);
-  secondsSpan.find('.first').html(seconds[0]);
-  secondsSpan.find('.second').html(seconds[1]);
+  secondsSpan.html(seconds);
   if(t.total<=0){
     clearInterval(timeInterval);
   }
