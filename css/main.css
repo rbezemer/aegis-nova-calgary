@@ -61,7 +61,6 @@ h1, h2, h3, h4 {
 .clock-div div > span{
   padding: 15px;
   border-radius: 3px;
-  display: inline-block;
 }
 
 .clock-text {
@@ -72,4 +71,20 @@ h1, h2, h3, h4 {
 .clock-output {
   font-size: 72px;
   font-weight: bold;
+  padding: 5px 20px;
+}
+.first {
+  float:left;
+  min-width:60px;
+  padding-left: 35px;
+}
+.second {
+  float: right;
+  min-width:60px;
+  padding-right:20px;
+
+}
+.seconds{
+  padding: 15px 0 !important;
+
 }

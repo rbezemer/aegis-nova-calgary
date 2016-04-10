@@ -30,10 +30,13 @@ function updateClock(){
   daysSpan.html(('0' + t.days).slice(-2));
   hoursSpan.html(('0' + t.hours).slice(-2));
   minutesSpan.html(('0' + t.minutes).slice(-2));
-  secondsSpan.html(('0' + t.seconds).slice(-2));
+  var seconds = ('0' + t.seconds).slice(-2);
+  secondsSpan.find('.first').html(seconds[0]);
+  secondsSpan.find('.second').html(seconds[1]);
   if(t.total<=0){
     clearInterval(timeInterval);
   }
 }
+
 updateClock();
 initializeClock('clock-div');
