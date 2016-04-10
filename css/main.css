@@ -1,11 +1,75 @@
-.title-area {
-  color:white;
+@font-face {
+  font-family: Amarillo USAF;
+  src: local("Amarillo USAF"),
+  local("Amarillo USAF"),
+  url("amarurgt.ttf");
+  font-weight: bold;
+}
+html {
+  min-height:100%;
   background-color: black;
+  background:url('../img/calgary-background.jpg') center center no-repeat;
+  background-size: cover;
+
+}
+
+body {
+  background: none;
+  font-family: 'Coda', cursive;
+  padding-top: 50px;
+  padding-bottom: 400px;
+  heigth:100%;
+
+}
+p {
+  font-family: 'Coda', cursive;
+}
+h1, h2, h3, h4 {
+  font-family: 'Amarillo USAF', Arial;
+}
+.btn-primary {
+  background-image: linear-gradient(to bottom,#5281F7 0,#265a88 100%);
+}
+.calgary-res-logo{
+  width:300px;
+
+}
+.timer-title{
+  color:#5281F7;
+}
+.title-area {
+  background: none;
+  color:white;
+  /*background-color: black;
   background-image: url("../img/calgary-res.jpeg");
   background-repeat:no-repeat;
   background-position: right top;
   background-size: 20% 100%;
+  */
 }
-body {
-  background-color: #01A4E4;
+.clock-div {
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+.clock-div > div{
+  padding: 10px;
+  border-radius: 3px;
+  display: inline-block;
+}
+.clock-div div > span{
+  padding: 15px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.clock-text {
+  padding-top: 5px;
+  font-size: 16px;
+
+}
+.clock-output {
+  font-size: 72px;
+  font-weight: bold;
 }
